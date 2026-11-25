@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeeneeNext | Learn Cybersecurity in Action</title>
+
+    <!-- add css cdns -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobostyle.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav id="mainNav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-brand" aria-label="JeeneeNext Home">
+            <div class="nav-logo"><img src="img/logo/Jeenee.svg" alt="JeeneeNext Logo"></div>
+        </a>
+
+        <div class="nav-links">
+            <a href="#courses">Courses</a>
+            <a href="#platform">Freelancing</a>
+            <a href="#community">Community</a>
+            <a href="https://school.jeeneenext.in/dashboard/">User Account</a>
+        </div>
+
+        <button type="button" onclick="openModal()" class="btn-nav">Call Now</button>
+
+        <button type="button" class="hamburger" id="hamburgerMenu" aria-label="Toggle Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Backdrop & Drawer -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button type="button" class="menu-close" id="menuClose" aria-label="Close Menu">&times;</button>
+        <a href="#courses" class="menu-link">Courses</a>
+        <a href="#platform" class="menu-link">Freelancing</a>
+        <a href="#community" class="menu-link">Community</a>
+        <a href="https://school.jeeneenext.in/dashboard/" class="menu-link">User Account</a>
+        <button type="button" onclick="openModal()" class="btn-nav mobile-cta">Call Now</button>
+    </div>
+
+    <!-- main site -->
+    <main>
+        <!-- hero section -->
+        <div id="hero">
+            <!-- Slide 1 -->
+            <div class="slide active" data-title="Cyber Security">
+                <img src="https://i.pinimg.com/1200x/0d/19/a8/0d19a8fb4a0928354a4f9e43447fb0c2.jpg" alt="Cyber Security Course" class="slide-bg">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">3-Month Live Cohort</span>
+                    <h1>Hacking & Cyber Security Crash Course</h1>
+                    <p>Networking, penetration testing, and digital forensics in our 3 month crash course curated by
+                        industry elites.</p>
+                    <div class="slide-btns">
+                        <a href="#enroll" class="btn-primary">Enroll Now</a>
+                        <a href="#syllabus" class="btn-secondary">Syllabus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide" data-title="AI & Automation">
+                <img src="https://i.pinimg.com/736x/ac/7a/6e/ac7a6e900983f739c72b379e4ea5e92d.jpg" alt="AI Systems Course" class="slide-bg">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Hands-On Track</span>
+                    <h1>AI Systems & Security Automation</h1>
+                    <p>Build automated security tooling, LLM workflows, and real-world client deliverables with
+                        mentorship.</p>
+                    <div class="slide-btns">
+                        <a href="#enroll" class="btn-primary">Enroll Now</a>
+                        <a href="#syllabus" class="btn-secondary">Syllabus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" data-title="Cloud Defense">
+                <img src="https://i.pinimg.com/736x/f2/4f/b5/f24fb5a6a2d1637fc2212459e0769770.jpg" alt="Cloud Defense Course" class="slide-bg">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-tag">Infrastructure Lab</span>
+                    <h1>Cloud Native & DevSecOps Lab</h1>
+                    <p>Master container hardening, Kubernetes security, and zero-downtime CI/CD pipelines across cloud
+                        clusters.</p>
+                    <div class="slide-btns">
+                        <a href="#enroll" class="btn-primary">Enroll Now</a>
+                        <a href="#syllabus" class="btn-secondary">Syllabus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manual Arrows -->
+            <div class="hero-arrows">
+                <button type="button" id="prevSlide" aria-label="Previous">&#10094;</button>
+                <button type="button" id="nextSlide" aria-label="Next">&#10095;</button>
+            </div>
+
+            <!-- Upcoming Slide Previews -->
+            <div class="hero-thumbs">
+                <button type="button" class="thumb active" data-index="0">
+                    <img src="https://i.pinimg.com/1200x/0d/19/a8/0d19a8fb4a0928354a4f9e43447fb0c2.jpg" alt="Cyber Security">
+                    <span>Cyber Security</span>
+                </button>
+                <button type="button" class="thumb" data-index="1">
+                    <img src="https://i.pinimg.com/736x/ac/7a/6e/ac7a6e900983f739c72b379e4ea5e92d.jpg" alt="AI & Automation">
+                    <span>AI & Automation</span>
+                </button>
+                <button type="button" class="thumb" data-index="2">
+                    <img src="https://i.pinimg.com/736x/f2/4f/b5/f24fb5a6a2d1637fc2212459e0769770.jpg" alt="Cloud Defense">
+                    <span>Cloud Defense</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- add js cdns -->
+    <script src="app.js"></script>
+</body>
+
+</html>

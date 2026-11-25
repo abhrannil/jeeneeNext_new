@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+    /* Hide desktop links & desktop CTA button */
+    nav .nav-links,
+    nav > .btn-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+        top: 0;
+        height: 68px;
+        border-radius: 0;
+        padding: 0 20px;
+        background: rgba(11, 11, 13, 0.78);
+        border: none;
+        border-bottom: 1px solid var(--glass-border);
+    }
+
+    nav.scrolled {
+        top: 0;
+        height: 64px;
+    }
+
+    .nav-logo img {
+        width: 138px;
+    }
+}
